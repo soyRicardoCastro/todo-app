@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-  margin: 32px 0;
+  margin: 32px 5px;
   color: #fff;
   font-size: 24px;
 }
@@ -51,7 +51,7 @@ h1 {
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
   outline: none;
-  width: 320px;
+  width: 90%;
   background: transparent;
   color: #fff;
   margin: 10px
