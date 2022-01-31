@@ -1,4 +1,3 @@
-import {HeadText} from '../elements/TodoList.jsx'
 import TodoForm from './TodoForm.jsx'
 import Todo from './Todo.jsx'
 import { useState } from 'react'
@@ -43,7 +42,7 @@ function TodoList() {
 
   return (
     <>
-      <h1>What's the Plan for Today?</h1>
+      <h1>¿Cuales son los planes para hoy?</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
