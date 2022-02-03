@@ -55,14 +55,3 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
 };
 
 export default Todo;
-
-
-     /*<input
-         id="checkTodo"
-          type="checkbox"
-          checked={props.todo.done}
-          }
-        />
-        <label htmlFor="checkTodo">
-
-        </label>*/
