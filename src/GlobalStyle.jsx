@@ -95,6 +95,10 @@ h1 {
   position: relative;
 }
 
+.task {
+  width: 100%;
+}
+
 .todo-row {
   display: flex;
   justify-content: space-between;
