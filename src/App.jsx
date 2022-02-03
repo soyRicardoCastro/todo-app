@@ -4,9 +4,7 @@ function App() {
   return (
  <>
   <GlobalStyle/>
-
   <div className="todo-app"><TodoList/></div>
-  
  </>
  )
 }
