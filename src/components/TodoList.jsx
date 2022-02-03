@@ -1,9 +1,22 @@
 import TodoForm from './TodoForm.jsx'
 import Todo from './Todo.jsx'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    let data = localStorage.getItem('todo')
+    if (data != null) {
+      setTodos(JSON.parse(data))
+    } else {
+      setTodos([])
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('todo', JSON.stringify(todos))
+  }, [todos])
 
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
